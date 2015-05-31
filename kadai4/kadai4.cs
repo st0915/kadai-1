@@ -1,27 +1,24 @@
 using System; 
 
-namespace kadai4
+namespace Kadai4
 {
-
+//④コマンドライン引数の値を判定して出力を変更するプログラムの作成(if文, switch文の理解が目的)
 	class Switch
 	{
 
-		public static void Main()
+		public static void Main(string[] args)
 		{
-
-			Console.WriteLine("終了しますか？");
-                	Console.WriteLine("1:終了　その他:続ける");
-                	var StrSelect = Console.ReadLine();
-                	if (StrE == "1")
-                	{
-                    		Console.WriteLine("終了します");
-                    		//終了処理
-                    		Environment.Exit(0);
-                	}
-                	else
-                	{
-                    		Console.WriteLine("kadai3でif文もswitch文も使ったので許してください");
-                	}
+			double valueA;
+			if(double.TryParse(args[0],out valueA))
+			{
+				Console.WriteLine(args[0] + ":コマンドライン引数は数字です");
+				return;
+			}
+			else
+			{
+				Console.WriteLine(args[0] + ":コマンドライン引数は文字列です");
+				return;
+			}
 		}
 	}
 	
