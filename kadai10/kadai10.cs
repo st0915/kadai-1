@@ -10,11 +10,11 @@ namespace Kadai
 		public static void Main()
 		{
 			ConsoleOutput HelloWorld = new ConsoleOutput();
-			HelloWorld.Set("Hello World");
+			HelloWorld.SetValue("Hello World");
 			HelloWorld.Output();
 			
 			TextOutput TextHelloWorld = new TextOutput();
-			TextHelloWorld.Set("Hello World");
+			TextHelloWorld.SetValue("Hello World");
 			TextHelloWorld.Output();
 			
 			TextInput FileContents = new TextInput();
@@ -37,7 +37,7 @@ namespace Kadai
 			return value;
 		}
 		
-		public void Set(string outPutValue)
+		public void SetValue(string outPutValue)
 		{
 			value = outPutValue;
 		}
@@ -57,7 +57,7 @@ namespace Kadai
 			return value;
 		}
 		
-		public void Set(string outPutValue)
+		public void SetValue(string outPutValue)
 		{
 			value = outPutValue;
 		}
