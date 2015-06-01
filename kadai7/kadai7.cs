@@ -9,7 +9,7 @@ namespace Kadai
 		public static void Main()
 		{
 			Output HelloWorld = new Output();
-			HelloWorld.Set("Hello World");
+			HelloWorld.SetValue("Hello World");
 			HelloWorld.OutPutValuse();
 		}
 	}
@@ -23,7 +23,7 @@ namespace Kadai
 			return value;
 		}
 		
-		public void Set(string outPutValue)
+		public void SetValue(string outPutValue)
 		{
 			value = outPutValue;
 		}
