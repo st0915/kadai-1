@@ -10,7 +10,7 @@ namespace Kadai
 		{
 			Output HelloWorld = new Output();
 			HelloWorld.SetValue("Hello World");
-			HelloWorld.OutPutValuse();
+			HelloWorld.OutPutValue();
 		}
 	}
 	
@@ -28,7 +28,7 @@ namespace Kadai
 			value = outPutValue;
 		}
 		
-		public void OutPutValuse()
+		public void OutPutValue()
 		{
 			Console.WriteLine(value);
 		}
