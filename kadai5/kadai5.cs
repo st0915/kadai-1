@@ -8,19 +8,19 @@ namespace Kadai5
 
 		public static void Main()
 		{
-            for (int i = 1; i <= 100;i++ )
-            {
-                if (i % 10 == 0)
-                {
-                    Console.WriteLine(i);
-                }
-                else 
-                {
-                    Console.Write(i + ",");
-                }
-                
-            }
+			for (int i = 1; i <= 100;i++ )
+			{
+				if (i % 10 == 0)
+				{
+					Console.WriteLine(i);
+				}
+				else 
+				{
+					Console.Write(i + ",");
+				}
+				
+			}
 		}
 	}
-	
+
 }
