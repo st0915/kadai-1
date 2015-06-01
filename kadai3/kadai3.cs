@@ -45,24 +45,24 @@ namespace kadai3
                     break;
 
                 case "-":
-                    answer = valueA + valueB;
+                    answer = valueA - valueB;
                     Console.WriteLine(answer);
                     break;
 
                 case "*":
-                    answer = valueA + valueB;
+                    answer = valueA * valueB;
                     Console.WriteLine(answer);
                     break;
 
                 case"/":
-                    if(valueA == 0)
+                    if(valueB == 0)
                     {
                         Console.WriteLine("•ª•ê‚ª0‚Å‚·");
                         return;
                     }
                     else
                     {
-                        answer = valueA + valueB;
+                        answer = valueA / valueB;
                         Console.WriteLine(answer);
                         break;
                     }   
