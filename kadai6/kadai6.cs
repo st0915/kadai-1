@@ -13,19 +13,19 @@ namespace Kadai6
 			{
 				if (i % 10 == 0)
 				{
-					value = FizzBuzzOut(i);
+					value = CreateOutData(i);
 					Console.WriteLine(value);
 				}
 				else 
 				{
-					value = FizzBuzzOut(i);
+					value = CreateOutData(i);
 					Console.Write(value + ",");
 				}
 				
 			}
 		}
 		
-		public static string FizzBuzzOut(int i)
+		public static string CreateOutData(int i)
 		{
 			string outValue;
 			if(i % 3 == 0 && i % 5 == 0)
@@ -44,7 +44,7 @@ namespace Kadai6
 			{
 				outValue = String.Format("{0, 8}", i);
 			}
-		return outValue;
+			return outValue;
 		}
 	}
 	
